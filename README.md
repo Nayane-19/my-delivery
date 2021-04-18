@@ -1,4 +1,4 @@
-<h1 align="center">My Develivery</h1>
+<h1 align="center">My Delivery</h1>
 
 <p align="center">Este projeto foi constuido para criar habilidades de desenvolvimento com a biblioteca  <a href="https://pt-br.reactjs.org/">🔗 React</a></p>
 
