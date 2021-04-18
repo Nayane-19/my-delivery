@@ -1,8 +1,10 @@
 <h1 align="center">My Delivery</h1>
 
+
 <p align="center">Este projeto foi constuido para criar habilidades de desenvolvimento com a biblioteca  <a href="https://pt-br.reactjs.org/">🔗 React</a></p>
 
-<p align="center">🚀 lib para construir interfaces do usuário com componentes reutilizáveis</p>
+<p align="center"><img src="https://media.giphy.com/media/tGR4HDYrZdz7Fjc7Xx/giphy.gif"/></p>
+<h2 align="center"> Em Desenvolvimento...</h2>
 
 ## Dependências
 - yarn add @material-ui/core

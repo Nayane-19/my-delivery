@@ -29,9 +29,9 @@ const tutorialSteps = [
       'https://encontrefacilcomprebem.com.br/wp-content/uploads/2020/11/Lanches-15-6.jpg',
   },
   {
-    label: 'batata',
+    label: 'espetinho',
     imgPath:
-      'https://media-manager.noticiasaominuto.com/1920/1484505398/naom_5877c5a74225a.jpg',
+      'https://www.rimaq.com.br/blog/wp-content/uploads/2019/05/espetinho-gourmet.png',
   },
 ];
 
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   img: {
-    height: "35rem",
+    height: "34rem",
     display: 'flex',
     
     maxWidth: 2000,
@@ -72,6 +72,7 @@ function Header() {
 
   return (
     <div className={classes.root}>
+      <title>Pizza</title>
       <AutoPlaySwipeableViews 
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
