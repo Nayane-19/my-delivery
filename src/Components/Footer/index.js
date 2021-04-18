@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-
-import garçonete from "../../images/garçonete.png"
-
+import garçonete from "../../images/garçonete.png";
 
 import {
   FaFacebook,
@@ -14,8 +13,8 @@ import {
   FaGithub,
   FaGit,
   FaMailBulk,
-  FaMailchimp
-} from 'react-icons/fa';
+  FaMailchimp,
+} from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -25,9 +24,8 @@ import {
   SocialIcons,
   SocialIconLink,
   SidebarMenu,
-  SidebarLink
-} from './FooterElements';
-
+  SidebarLink,
+} from "./FooterElements";
 
 function Footer() {
   return (
@@ -35,34 +33,56 @@ function Footer() {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-          <SocialLogo to='/'> 
-          <img src={garçonete} alt="garçonete"/>        
-                  MyDelivery                
-          </SocialLogo> 
-          <SidebarMenu>
-                <SidebarLink to='/'>Cardápio</SidebarLink>
-                <SidebarLink to='/'>Faça Seu Pedido</SidebarLink>
-                <SidebarLink to='/'>Contato</SidebarLink>
-            </SidebarMenu>                       
+            <SocialLogo to="/">
+              <img src={garçonete} alt="garçonete" />
+              MyDelivery
+            </SocialLogo>
+            <SidebarMenu>
+              <Link to="/">
+                <SidebarLink>Home</SidebarLink>
+              </Link>
+              <Link to="/Cardapio">
+                <SidebarLink>Cardápio</SidebarLink>
+              </Link>
+              <Link to="/Cadastro">
+                <SidebarLink>Cadastro</SidebarLink>
+              </Link>
+            </SidebarMenu>
             <SocialIcons>
-              <SocialIconLink href='https://web.whatsapp.com/' target='_blank' aria-label='WhatsApp'>
+              <SocialIconLink
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
                 <FaWhatsapp />
               </SocialIconLink>
-              <SocialIconLink href='https://www.instagram.com/nayane.m.santos/' target='_blank' aria-label='Instagram'>
+              <SocialIconLink
+                href="https://www.instagram.com/nayane.m.santos/"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href='https://github.com/Nayane-19' target='_blank' aria-label='Github'>
+              <SocialIconLink
+                href="https://github.com/Nayane-19"
+                target="_blank"
+                aria-label="Github"
+              >
                 <FaGithub />
               </SocialIconLink>
               <SocialIconLink
-                href='https://mail.google.com/mail/u/0/#inbox'
-                target='_blank'
-                aria-label='Gmail'
-                rel='noopener noreferrer'
+                href="https://mail.google.com/mail/u/0/#inbox"
+                target="_blank"
+                aria-label="Gmail"
+                rel="noopener noreferrer"
               >
                 <FaMailBulk />
               </SocialIconLink>
-              <SocialIconLink href='https://www.linkedin.com/in/nayane-menezes-dev-eng/' target='_blank' aria-label='Linkedin'>
+              <SocialIconLink
+                href="https://www.linkedin.com/in/nayane-menezes-dev-eng/"
+                target="_blank"
+                aria-label="Linkedin"
+              >
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>
@@ -71,6 +91,6 @@ function Footer() {
       </FooterWrap>
     </FooterContainer>
   );
-};
+}
 
 export default Footer;

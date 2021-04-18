@@ -1,16 +1,14 @@
 import React from "react";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
+import Routes from "../src/routes";
+import history from "../src/Services/history";
+import { BrowserRouter as Router } from "react-router-dom";
 
-
-
-function App() {
+export default function App() {
   return (
-    <section>
-      <Header />
-      <Footer/>
-    </section>
+    <>
+      <Router history={history}>
+        <Routes />
+      </Router>
+    </>
   );
 }
-
-export default App;

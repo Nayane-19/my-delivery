@@ -1,7 +1,9 @@
 <h1 align="center">My Delivery</h1>
 
+![image](https://user-images.githubusercontent.com/53491642/115133749-fbbeac80-9fe0-11eb-8918-9b3edfbd6d8f.png)
 
-<p align="center">Este projeto foi constuido para criar habilidades de desenvolvimento com a biblioteca  <a href="https://pt-br.reactjs.org/">🔗 React</a></p>
+
+<p align="center">Este projeto foi construído para criar habilidades de desenvolvimento com a biblioteca  <a href="https://pt-br.reactjs.org/">🔗 React</a></p>
 
 <p align="center"><img src="https://media.giphy.com/media/2FMLvbziMsU9cSyHbV/giphy.gif"/></p>
 <h2 align="center"> Em Desenvolvimento...</h2>
@@ -10,6 +12,7 @@
 - yarn add @material-ui/core
 - yarn add @material-ui/icons
 - yarn add react-swipeable-views
+- yarn add react-router-dom
 
 ## Ícones para commits padrão
 
