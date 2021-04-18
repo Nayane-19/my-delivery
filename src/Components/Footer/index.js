@@ -1,83 +1,76 @@
-import React from "react";
-import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
-import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import Icons from "./Icons";
-import { Button, Container } from "./styled";
-import { SwipeableDrawer } from "@material-ui/core";
+import React from 'react';
 
-const useStyles = makeStyles({
-  list: {
-    width: 250,
-    height: 0,
-  },
-  fullList: {
-    width: "auto",
-    display: "flex",
-  },
-});
+
+import garçonete from "../../images/garçonete.png"
+
+
+import {
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaLinkedin,
+  FaWhatsapp,
+  FaGithub,
+  FaGit,
+  FaMailBulk,
+  FaMailchimp
+} from 'react-icons/fa';
+import {
+  FooterContainer,
+  FooterWrap,
+  SocialMedia,
+  SocialMediaWrap,
+  SocialLogo,
+  SocialIcons,
+  SocialIconLink,
+  SidebarMenu,
+  SidebarLink
+} from './FooterElements';
+
 
 function Footer() {
-  const classes = useStyles();
-  const [state, setState] = React.useState({
-    Menu: false,
-  });
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  };
-
-  const list = (anchor) => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom",
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {["Faça Seu Pedido Online", "Cardápio", "Contato", "Cadastre-se"].map(
-          (text) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          )
-        )}
-      </List>
-      <Divider />
-    </div>
-  );
-
   return (
-    <Container>
-      {["Menu"].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <SwipeableDrawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-            onOpen={toggleDrawer(anchor, true)}
-          >
-            {list(anchor)}
-          </SwipeableDrawer>
-        </React.Fragment>
-      ))}
-      <Icons />
-    </Container>
+    <FooterContainer>
+      <FooterWrap>
+        <SocialMedia>
+          <SocialMediaWrap>
+          <SocialLogo to='/'> 
+          <img src={garçonete} alt="garçonete"/>        
+                  MyDelivery                
+          </SocialLogo> 
+          <SidebarMenu>
+                <SidebarLink to='/'>Cardápio</SidebarLink>
+                <SidebarLink to='/'>Faça Seu Pedido</SidebarLink>
+                <SidebarLink to='/'>Contato</SidebarLink>
+            </SidebarMenu>                       
+            <SocialIcons>
+              <SocialIconLink href='https://web.whatsapp.com/' target='_blank' aria-label='WhatsApp'>
+                <FaWhatsapp />
+              </SocialIconLink>
+              <SocialIconLink href='https://www.instagram.com/nayane.m.santos/' target='_blank' aria-label='Instagram'>
+                <FaInstagram />
+              </SocialIconLink>
+              <SocialIconLink href='https://github.com/Nayane-19' target='_blank' aria-label='Github'>
+                <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink
+                href='https://mail.google.com/mail/u/0/#inbox'
+                target='_blank'
+                aria-label='Gmail'
+                rel='noopener noreferrer'
+              >
+                <FaMailBulk />
+              </SocialIconLink>
+              <SocialIconLink href='https://www.linkedin.com/in/nayane-menezes-dev-eng/' target='_blank' aria-label='Linkedin'>
+                <FaLinkedin />
+              </SocialIconLink>
+            </SocialIcons>
+          </SocialMediaWrap>
+        </SocialMedia>
+      </FooterWrap>
+    </FooterContainer>
   );
-}
+};
 
 export default Footer;
