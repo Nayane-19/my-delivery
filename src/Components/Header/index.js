@@ -29,9 +29,9 @@ const tutorialSteps = [
       'https://encontrefacilcomprebem.com.br/wp-content/uploads/2020/11/Lanches-15-6.jpg',
   },
   {
-    label: 'espetinho',
+    label: 'hamburguer',
     imgPath:
-      'https://www.rimaq.com.br/blog/wp-content/uploads/2019/05/espetinho-gourmet.png',
+      'https://ae01.alicdn.com/kf/H4550be94ccc742bcb98a474017f7037cu.jpg',
   },
 ];
 
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
   },
   img: {
-    height: "34rem",
+    height: "33rem",
     display: 'flex',
     
     maxWidth: 2000,
