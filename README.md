@@ -3,7 +3,7 @@
 
 <p align="center">Este projeto foi constuido para criar habilidades de desenvolvimento com a biblioteca  <a href="https://pt-br.reactjs.org/">🔗 React</a></p>
 
-<p align="center"><img src="https://media.giphy.com/media/tGR4HDYrZdz7Fjc7Xx/giphy.gif"/></p>
+<p align="center"><img src="https://media.giphy.com/media/2FMLvbziMsU9cSyHbV/giphy.gif"/></p>
 <h2 align="center"> Em Desenvolvimento...</h2>
 
 ## Dependências
