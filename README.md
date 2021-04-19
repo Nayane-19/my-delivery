@@ -2,8 +2,12 @@
 
 <p align="center">Este projeto foi construído para criar habilidades de desenvolvimento com a biblioteca  <a href="https://pt-br.reactjs.org/">🔗 React</a></p>
 
-<p align="center"><img src="https://media.giphy.com/media/2FMLvbziMsU9cSyHbV/giphy.gif"/></p>
-<h2 align="center"> Em Desenvolvimento...</h2>
+<h2 align="center">Home</h2>
+<p align="center"><img src="https://media.giphy.com/media/0uYPDFDQmxR9uiG0KD/giphy.gif"/></p>
+<h2 align="center">Cardápio</h2>
+<p align="center"><img src="https://media.giphy.com/media/37s6IbxB2IfI3xkaBZ/giphy.gif"/></p>
+<h2 align="center">Faça seu Pedido</h2>
+<p align="center"><img src="https://media.giphy.com/media/XUX2V7dJHdJNuGYkAI/giphy.gif"/></p>
 
 ## Dependências
 - yarn add @material-ui/core
