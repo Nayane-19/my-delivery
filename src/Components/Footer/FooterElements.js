@@ -6,6 +6,12 @@ export const FooterContainer = styled.footer`
   background-color: #0d0909;
 `;
 
+export const Button=styled.button`
+    width: 86px;
+    padding: 8px 0;
+    background: #3a2b58;
+`
+
 export const FooterWrap = styled.div`
   display: flex;
   flex-direction: column;
