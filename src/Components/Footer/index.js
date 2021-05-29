@@ -4,17 +4,12 @@ import { Link } from "react-router-dom";
 import garçonete from "../../images/garçonete.png";
 
 import {
-  FaFacebook,
   FaInstagram,
-  FaYoutube,
-  FaTwitter,
   FaLinkedin,
   FaWhatsapp,
   FaGithub,
-  FaGit,
   FaMailBulk,
-  FaMailchimp,
-} from "react-icons/fa";
+  } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,

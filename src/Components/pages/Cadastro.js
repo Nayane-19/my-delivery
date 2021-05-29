@@ -1,10 +1,14 @@
-import React from 'react';
-import Footer from '../Footer';
+import React from "react";
+import Footer from "../Footer";
 
-function Cadastro(){
-    return(
-        <Footer/>
-    );
+
+
+function Cadastro() {
+  return (
+    <section>
+      <Footer />
+    </section>
+  );
 }
 
 export default Cadastro;
